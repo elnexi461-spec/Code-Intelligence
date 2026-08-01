@@ -48,6 +48,14 @@ export type { RateLimiterOptions as ConcurrencyRateLimiterOptions } from './conc
 export { ConcurrencyController } from './concurrency/ConcurrencyController.js';
 export type { ConcurrencyControllerOptions } from './concurrency/ConcurrencyController.js';
 
+export { ScraperEngine } from './engine/ScraperEngine.js';
+export { JobManager } from './engine/JobManager.js';
+export { Pipeline } from './engine/Pipeline.js';
+export type { PipelineFetcher, PipelineExtractor, PipelineStorage } from './engine/Pipeline.js';
+export { LifecycleManager } from './engine/LifecycleManager.js';
+export { EngineState } from './engine/EngineState.js';
+export type { EngineConfig, EngineHooks, EngineStats, HealthStatus, PipelineResult, EngineStateValue } from './engine/types.js';
+
 export { RetryManager } from './retry/RetryManager.js';
 export type { RetryManagerCallbacks } from './retry/RetryManager.js';
 export { RetryClassifier } from './retry/RetryClassifier.js';
