@@ -48,6 +48,14 @@ export type { RateLimiterOptions as ConcurrencyRateLimiterOptions } from './conc
 export { ConcurrencyController } from './concurrency/ConcurrencyController.js';
 export type { ConcurrencyControllerOptions } from './concurrency/ConcurrencyController.js';
 
+export { RetryManager } from './retry/RetryManager.js';
+export type { RetryManagerCallbacks } from './retry/RetryManager.js';
+export { RetryClassifier } from './retry/RetryClassifier.js';
+export type { Classification as RetryClassification } from './retry/RetryClassifier.js';
+export { BackoffStrategy } from './retry/BackoffStrategy.js';
+export type { BackoffOptions } from './retry/BackoffStrategy.js';
+export type { RetryVerdict, RetryAttempt, RetryOutcome, RetryManagerOptions } from './retry/types.js';
+
 export { ConfigManager } from './config/ConfigManager.js';
 export { DEFAULT_CONFIG } from './config/defaults.js';
 export type { ScraperConfig, FetchConfig, RetryConfig } from './config/types.js';
