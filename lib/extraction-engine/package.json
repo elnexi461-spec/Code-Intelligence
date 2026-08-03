@@ -1,0 +1,19 @@
+{
+  "name": "@workspace/extraction-engine",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@workspace/fetch-engine": "workspace:*",
+    "cheerio": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:"
+  }
+}

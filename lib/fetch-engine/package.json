@@ -1,0 +1,20 @@
+{
+  "name": "@workspace/fetch-engine",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "tough-cookie": "^4.1.4",
+    "undici": "^7.10.0"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "@types/tough-cookie": "^4.0.5"
+  }
+}
